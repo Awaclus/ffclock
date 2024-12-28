@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   }
 
   if (command !== 'serve') {
-    config.base = '/ffclock/'
+    config.base = 'https://ffclock.awaclus.eu/'
   }
 
   return config
