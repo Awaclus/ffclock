@@ -58,4 +58,9 @@
 .fflogo {
   max-width: 200px;
   filter: drop-shadow(0px 0px 7px #6e42bf) drop-shadow(0px 0px 17px #6e42bf) drop-shadow(0px 0px 3px #6e42bf);
+  transition: 1.5s;
+}
+.fflogo:hover {
+  filter: unset;
+  filter: drop-shadow(0px 0px 7px #fe79c4) drop-shadow(0px 0px 17px #fe79c4);
 }
