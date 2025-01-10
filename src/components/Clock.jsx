@@ -69,7 +69,7 @@ const Clock = () => {
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
-    if (long) {
+    if (long && days > 0) {
         return days + " days, " + hours + ":" + minutes + ":" + seconds;
     } else {
         return hours + ":" + minutes + ":" + seconds;
