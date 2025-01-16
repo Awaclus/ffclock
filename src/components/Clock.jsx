@@ -55,6 +55,8 @@ const Clock = () => {
         </div>
       }
 
+      <p>Don't forget the <a href="https://files.catbox.moe/y8w6rm.jpg" target="_blank" rel="noreferrer noopener">Kara no Kyoukai m/a/rathon on Feb 22 & Mar 1!</a></p>
+
       <p>Note: This is based on a pre-calculated estimate, not on the actual stream. It should be accurate to within a few seconds if everything goes according to keikaku, but it might not be exact to the second and it could be off by way more if shit hits the fan. </p>
       <p>Also it is based on your own system's clock so you should synchronize your system time if you want it to be as accurate as possible.</p>
     </div>
