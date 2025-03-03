@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 const Clock = () => {
   const [time, setTime] = useState(new Date());
 
-  const pt1 = new Date("2025-01-11T18:55:00.000Z");
-  const pt2 = new Date("2025-01-11T21:37:25.000Z");
-  const pt3 = new Date("2025-01-12T00:40:55.000Z");
-  const end = new Date("2025-01-12T03:01:00.000Z");
-  const next = new Date("2026-01-10T18:55:00.000Z");
+  const pt1 = new Date("2026-01-10T18:55:00.000Z");
+  const pt2 = new Date("2026-01-10T21:37:25.000Z");
+  const pt3 = new Date("2026-01-11T00:40:55.000Z");
+  const end = new Date("2026-01-11T03:01:00.000Z");
+  const next = new Date("2027-01-10T18:55:00.000Z");
 
 
   useEffect(() => {
@@ -52,10 +52,9 @@ const Clock = () => {
         end < time && next > time && <div>
             <h3>See you next year in:</h3>
             <p className='clock'>{msToTime(next-time, true)}</p>
+            <p>(and don't forget Kara no Kyoukai!)</p>
         </div>
       }
-
-      <p>Don't forget the <a href="https://files.catbox.moe/y8w6rm.jpg" target="_blank" rel="noreferrer noopener">Kara no Kyoukai m/a/rathon on Feb 22 & Mar 1!</a></p>
 
       <p>Note: This is based on a pre-calculated estimate, not on the actual stream. It should be accurate to within a few seconds if everything goes according to keikaku, but it might not be exact to the second and it could be off by way more if shit hits the fan. </p>
       <p>Also it is based on your own system's clock so you should synchronize your system time if you want it to be as accurate as possible.</p>
