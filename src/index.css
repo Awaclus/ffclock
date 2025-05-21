@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Atkinson Hyperlegible Next', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,16 +19,16 @@
 ::selection {
   background-color: transparent !important;
   color: white;
-  text-shadow: 0px 0px 7px #fe79c4, 0px 0px 7px #fe79c4;
+  text-shadow: 0px 0px 7px red, 0px 0px 7px red;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #dd0000;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #990000;
 }
 
 body {
@@ -35,7 +38,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(https://files.catbox.moe/ee41ed.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(https://files.catbox.moe/b83ubd.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -62,17 +65,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
