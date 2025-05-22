@@ -458,6 +458,10 @@ a:hover {
   background-color: #2d0000;
 }
 
+#usercount {
+  margin-left: 4px;
+}
+
 .channel-emote {
   max-height: 80px;
 }
