@@ -508,6 +508,13 @@ a:hover {
     display: none;
   }
 
+  .hovertraditional:hover {
+     transition: 0.5s;
+     object-fit: contain;
+     transform: translateY(-70px) scale(2.75);
+     z-index: 1337;
+  }
+
 }
 
 [class^="chat-msg-Kyouko"] .username {
