@@ -446,7 +446,7 @@ a:hover {
 @media (prefers-reduced-motion: no-preference) {
 
   span:has(> .channel-emote)::after {
-    transition: 0s;
+    transition: 0.3s;
     content: "";
     position: fixed;
     top: 10px;
@@ -467,7 +467,6 @@ a:hover {
     content: "";
     width: 380px;
     height: 100%;
-    transition: 0.3s;
   }
 
 }
