@@ -464,6 +464,7 @@ a:hover {
 
 .channel-emote {
   max-height: 80px;
+  transition: 0.2s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
