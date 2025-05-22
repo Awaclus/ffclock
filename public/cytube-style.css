@@ -433,7 +433,7 @@ a:hover {
 }
 
 .qe_title {
-  color: white;
+  color: white !important;
 }
 
 .nick-hover {
