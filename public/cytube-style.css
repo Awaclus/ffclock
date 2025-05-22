@@ -482,7 +482,7 @@ a:hover {
     z-index: 9999;
     pointer-events: none;
     max-width: 40%;
-    max-height: 40%;
+    max-height: 25%;
   }
 
 
@@ -491,6 +491,21 @@ a:hover {
     width: 380px;
     height: 100%;
     transition: all 0.3s;
+  }
+
+  .hoverlarge span:has(> .channel-emote)::after {
+    left: unset;
+    right: 10px;
+    background-position: top right;
+    max-height: 50%;
+  }
+
+  .hoverlarge span:has(> .channel-emote:hover)::after {
+    width: 600px;
+  }
+
+  .hovernone span:has(> .channel-emote)::after {
+    display: none;
   }
 
 }
