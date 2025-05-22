@@ -1,0 +1,1325 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono&display=swap');
+
+/*
+This is the style for the FF CyTube channel.
+*/
+
+html {
+  scrollbar-width: thin !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: #660000 rgba(0, 0, 0, 0.5);
+}
+
+input {
+  accent-color: red;
+}
+
+a:focus,
+button:focus {
+  outline: none !important;
+}
+
+button,
+button:focus {
+  border: 0px !important;
+}
+
+.nav li>a:focus {
+  background-color: unset;
+  outline: none;
+}
+
+.nav .open>a:focus {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.nav>li>a:hover {
+  background-color: rgb(55, 0, 0);
+}
+
+::-moz-selection {
+  background: #770000;
+}
+
+::selection {
+  background: #770000;
+}
+
+#userlist,
+#messagebuffer {
+  scrollbar-width: thin;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://files.catbox.moe/b83ubd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
+
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 12.5pt;
+  font-weight: 300;
+}
+
+@media (max-width: 1250px) {
+  body {
+    font-size: 11pt;
+  }
+}
+
+
+b {
+  font-weight: 800;
+  color: #dddddd;
+}
+
+@font-face {
+  font-family: hummingbird;
+  src: url(https://ffclock.awaclus.eu/assets/FOT-HummingStdEn-B-CmIktQUw.OTF);
+}
+
+h3,
+h4 {
+  font-family: 'hummingbird', Verdana, sans-serif;
+  text-shadow: 0px 0px 6px red, 0px 0px 10px red;
+  color: white;
+}
+
+h3 {
+  font-size: 23pt;
+}
+
+h4 {
+  font-size: 17pt;
+  margin-top: 20px;
+}
+
+
+.modal-dialog {
+  min-width: 700px !important;
+}
+
+.modal-content {
+  background: linear-gradient(#111111, #1a0417);
+}
+
+.btn-primary {
+  background-image: linear-gradient(rgba(225, 0, 0, 0.9), rgba(255, 0, 0, 0.8) 40%, rgba(190, 0, 0, 0.8));
+}
+
+.btn-primary:hover {
+  background-image: linear-gradient(rgba(160, 0, 0, 0.9), rgba(160, 0, 0, 0.8) 40%, rgba(130, 0, 0, 0.8));
+}
+
+.nav-tabs .active a {
+  background-color: rgba(255, 0, 0, 0.4) !important;
+}
+
+.text-muted a[href="/funding"]::after {
+  content: ' (CyTube)' !important;
+}
+
+#footer {
+  display: none !important;
+}
+
+.emote-preview-container {
+  width: 120px;
+  height: 120px;
+}
+
+.emote-preview {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.profile-image {
+  max-width: 60px;
+  max-height: 60px;
+  margin: 5px;
+}
+
+#motd {
+  max-width: 1000px;
+}
+
+@media (width >=1400px) {
+  #motd {
+    margin-left: 3vw;
+  }
+}
+
+#motd li b {
+  display: block;
+  margin-top: 8px;
+}
+
+#motd li {
+  margin-top: 5px;
+}
+
+#motd div {
+  font-family: 'Atkinson Hyperlegible Mono', Courier New, monospace;
+  font-size: 11pt;
+  transform: scaleX(0.7);
+  display: inline-block;
+  transform-origin: left;
+}
+
+#togglemotd .glyphicon {
+  all: unset;
+  color: white;
+}
+
+
+
+#togglemotd .glyphicon:hover {
+  all: unset;
+  color: white;
+}
+
+.close {
+  opacity: 0.7;
+  text-shadow: unset;
+  color: white;
+}
+
+.close:focus {
+  opacity: 0.7;
+  text-shadow: unset;
+  color: white;
+}
+
+.close:hover {
+  opacity: 0.5;
+  color: white;
+}
+
+#togglemotd .glyphicon-plus {
+  font-size: 11pt;
+  color: rgb(255, 0, 0);
+}
+
+#togglemotd .glyphicon-plus:hover {
+  font-size: 11pt;
+  color: rgb(255, 0, 0);
+}
+
+
+#togglemotd .glyphicon-plus::before {
+  content: 'Expand info box';
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  position: unset;
+}
+
+.navbar-inverse {
+  background-image: linear-gradient(rgba(200, 0, 0, 0.9), rgba(200, 0, 0, 0.7), rgba(200, 0, 0, 0.6)) !important;
+  background-color: unset;
+  height: 50px;
+}
+
+.dropdown-menu li a {
+  background-image: linear-gradient(rgba(200, 0, 0, 0.9), rgba(200, 0, 0, 0.7), rgba(200, 0, 0, 0.6)) !important;
+}
+
+li .divider {
+  background-color: rgb(88, 88, 88) !important;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: rgba(128, 0, 0, 0.5) !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: unset;
+  color: #c8c8c8;
+}
+
+@media (width < 768px) {
+  .navbar-nav {
+    position: relative;
+    background-color: black;
+    z-index: 2;
+  }
+}
+
+.dropdown-menu {
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgb(64, 0, 0);
+  left: -2px;
+  top: 48px;
+
+}
+
+#welcome {
+  line-height: 20px;
+}
+
+.btn-default {
+  background-image: linear-gradient(rgba(72, 78, 85, 0.9), rgba(72, 78, 85, 0.7), rgba(72, 78, 85, 0.6));
+  background-color: unset;
+}
+
+
+
+#mainpage {
+  padding-top: 0px;
+}
+
+footer {
+  font-size: 12px;
+  color: rgba(200, 200, 200, 1) !important;
+  min-height: 8px;
+  height: 16px;
+  background-color: rgba(22, 26, 32, 0.0) !important;
+}
+
+#footer {
+  height: 16px;
+  color: rgba(200, 200, 200, 1) !important;
+}
+
+
+.container {
+  width: unset;
+  padding: 40px;
+}
+
+
+.well {
+  background-image: linear-gradient(to right, rgba(18, 20, 34, 0.2), rgba(18, 20, 34, 0.9) 9%, rgba(18, 20, 34, 0.8) 40%, rgba(18, 20, 34, 0.2));
+  background-color: unset;
+  border-style: none;
+}
+
+
+.timestamp {
+  font-family: 'Atkinson Hyperlegible Mono';
+  transform: scaleX(0.7);
+  display: inline-block;
+  transform-origin: left;
+  margin-right: -20px;
+}
+
+#messagebuffer,
+#userlist {
+  background: linear-gradient(to top, rgba(18, 20, 34, 0.9), rgba(18, 20, 34, 0.7) 60%, rgba(18, 20, 34, 0.5));
+}
+
+
+#chatheader {
+  background-color: rgba(18, 20, 34, 0.65);
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: unset;
+}
+
+input.form-control[type="text"],
+input.form-control[type="password"],
+input.form-control[type="email"],
+textarea.form-control {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #c8c8c8;
+}
+
+#chatheader {
+  padding: 8px;
+}
+
+#videowrap-header {
+  padding: 8px;
+}
+
+#plmeta {
+  padding: 8px;
+}
+
+.server-msg-reconnect {
+  background-color: rgba(18, 100, 18, 0.3);
+  color: rgb(0, 200, 0);
+  user-select: none;
+}
+
+.server-msg-disconnect {
+  user-select: none;
+}
+
+.server-msg-reconnect::after {
+  content: " to server."
+}
+
+@media (width >=1376px) {
+
+  .server-msg-reconnect::before {
+    content: "Transformed into a magical girl. "
+  }
+
+  .server-msg-disconnect::before {
+    content: "More grief seeds needed. "
+  }
+}
+
+@media (width >=516px) and (width < 992px) {
+
+  .server-msg-reconnect::before {
+    content: "Transformed into a magical girl. "
+  }
+
+  .server-msg-disconnect::before {
+    content: "More grief seeds needed. "
+  }
+}
+
+
+
+.queue_entry {
+  background-color: rgba(39, 43, 48, 0.7);
+  padding: 6px;
+}
+
+.queue_active {
+  background-image: linear-gradient(rgba(138, 145, 150, 0.7), rgba(138, 145, 150, 0.6), rgba(138, 145, 150, 0.5));
+}
+
+.container .credit {
+  margin: 8px 0px 0px 0px;
+  color: rgba(200, 200, 200, 0);
+
+}
+
+a {
+  color: rgb(235, 0, 0);
+  transition: 0.4s;
+}
+
+a:hover {
+  color: rgb(170, 0, 0);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nick-hover {
+  background-color: rgba(255, 0, 0, 0.02) !important;
+  color: white;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.1);
+}
+
+.nick-highlight {
+  background-color: rgba(85, 85, 85, 0.1);
+}
+
+#chatheader .label {
+  margin-top: 2px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.channel-emote {
+  max-height: 80px;
+  transition: 0.2s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  span:has(> .channel-emote)::after {
+    transition: 0.2s;
+    content: "";
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 0px;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 1));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 9999;
+    pointer-events: none;
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+
+  span:has(> .channel-emote:hover)::after {
+    content: "";
+    width: 380px;
+    height: 100%;
+    transition: 0s;
+  }
+
+}
+
+[class^="chat-msg-Kyouko"] .username {
+  text-shadow: 0px 0px 3px red, 0px 0px 3px red;
+}
+
+[class^="chat-msg-kyouko"] .username {
+  text-shadow: 0px 0px 3px red, 0px 0px 3px red;
+}
+
+[class^="chat-msg-Sayaka"] .username {
+  text-shadow: 0px 0px 3px deepskyblue, 0px 0px 3px deepskyblue;
+}
+
+[class^="chat-msg-sayaka"] .username {
+  text-shadow: 0px 0px 3px deepskyblue, 0px 0px 3px deepskyblue;
+}
+
+.chat-msg-Calvatres .username {
+  text-shadow: 0px 0px 3px #55c9b6, 0px 0px 3px #55c9b6;
+}
+
+[class^="chat-msg-Mami"] .username {
+  text-shadow: 0px 0px 3px darkgoldenrod, 0px 0px 3px darkgoldenrod;
+}
+
+.chat-msg-WidestMariposter .username {
+  text-shadow: 0px 0px 3px darkgoldenrod, 0px 0px 3px darkgoldenrod;
+}
+
+[class^="chat-msg-mami"] .username {
+  text-shadow: 0px 0px 3px darkgoldenrod, 0px 0px 3px darkgoldenrod;
+}
+
+[class^="chat-msg-Madoka"] .username {
+  text-shadow: 0px 0px 3px hotpink, 0px 0px 3px hotpink;
+}
+
+[class^="chat-msg-madoka"] .username {
+  text-shadow: 0px 0px 3px hotpink, 0px 0px 3px hotpink;
+}
+
+[class^="chat-msg-Homura"] .username {
+  text-shadow: 0px 0px 3px darkorchid, 0px 0px 3px darkorchid;
+}
+
+[class^="chat-msg-homura"] .username {
+  text-shadow: 0px 0px 3px darkorchid, 0px 0px 3px darkorchid;
+}
+
+.chat-msg-Awaclus .username {
+  text-shadow: 0px 0px 3px red, 0px 0px 3px red;
+  color: white;
+}
+
+.userlist_owner {
+  color: #c8c8c8 !important;
+}
+
+.userlist_op {
+  color: #c8c8c8 !important;
+}
+
+#userlist {
+  min-width: 135px;
+  max-width: 200px;
+  width: 17%;
+  font-size: 9pt;
+}
+
+.emotelist-table::after {
+  content: "Secret emotes: madomini, homumini, etc; madoborgar, homuborgar, etc; madobak, homubak, etc; /Custom Emote/";
+  font-size: 8pt;
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.userlist_item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+span:has(> .channel-emote[src="https://files.catbox.moe/7aynue.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/7aynue.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/k4n9es.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/k4n9es.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/sgx044.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/sgx044.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/j6w1bu.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/j6w1bu.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/m05o8s.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/m05o8s.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/nadwe7.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/nadwe7.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/vzyklu.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/vzyklu.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/b44nt3.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/b44nt3.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/ox9b84.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/ox9b84.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/ikol33.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/ikol33.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/34obml.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/34obml.jpg");
+}
+
+span:has(> .channel-emote[src="https://cdn.discordapp.com/emojis/366003481498091520.png"]:hover)::after {
+  background-image: url("https://cdn.discordapp.com/emojis/366003481498091520.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.discordapp.com/emojis/588882044344598563.png"]:hover)::after {
+  background-image: url("https://cdn.discordapp.com/emojis/588882044344598563.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.discordapp.com/emojis/366003526062833664.png"]:hover)::after {
+  background-image: url("https://cdn.discordapp.com/emojis/366003526062833664.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/k7ql64.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/k7ql64.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zy0ok7.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zy0ok7.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/m3yamk.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/m3yamk.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/yxxv5i.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/yxxv5i.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/dw87fv.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/dw87fv.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/etohrk.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/etohrk.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/b1a6so.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/b1a6so.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/6z4adj.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/6z4adj.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/lwhyqa.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/lwhyqa.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/v1tuysdf.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/v1tuysdf.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/hil2le.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/hil2le.jpg");
+}
+
+span:has(> .channel-emote[src="https://cdn.myanimelist.net/images/characters/5/108841.jpg"]:hover)::after {
+  background-image: url("https://cdn.myanimelist.net/images/characters/5/108841.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zh7rmt.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zh7rmt.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/wv2pti.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/wv2pti.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/dfy3vn.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/dfy3vn.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/original/5f/7f/__kaname_madoka_mahou_shoujo_madoka_magica_and_1_more_drawn_by_thehondabull__5f7f337637e92790b2f120042257b255.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/original/5f/7f/__kaname_madoka_mahou_shoujo_madoka_magica_and_1_more_drawn_by_thehondabull__5f7f337637e92790b2f120042257b255.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/57e43l.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/57e43l.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/sample/54/de/__kyubey_mahou_shoujo_madoka_magica_and_1_more_drawn_by_tsukushi_kazuki__sample-54dee9a95b348e2d9fc1dbfffa48c14a.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/sample/54/de/__kyubey_mahou_shoujo_madoka_magica_and_1_more_drawn_by_tsukushi_kazuki__sample-54dee9a95b348e2d9fc1dbfffa48c14a.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/upuu5io.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/upuu5io.jpg");
+}
+
+span:has(> .channel-emote[src="https://desu-usergeneratedcontent.xyz/a/image/1479/57/1479570629549.jpg"]:hover)::after {
+  background-image: url("https://desu-usergeneratedcontent.xyz/a/image/1479/57/1479570629549.jpg");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/sample/bf/4d/__miki_sayaka_and_sakura_kyouko_fate_and_2_more_drawn_by_nekotaririn__sample-bf4df4e56a2fc92cd2e34811c23646b6.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/sample/bf/4d/__miki_sayaka_and_sakura_kyouko_fate_and_2_more_drawn_by_nekotaririn__sample-bf4df4e56a2fc92cd2e34811c23646b6.jpg");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/sample/3e/e1/__tomoe_mami_and_momoe_nagisa_mahou_shoujo_madoka_magica_and_1_more_drawn_by_tobarin__sample-3ee1a53a7b3b4f0bff0d5d445c20fbc9.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/sample/3e/e1/__tomoe_mami_and_momoe_nagisa_mahou_shoujo_madoka_magica_and_1_more_drawn_by_tobarin__sample-3ee1a53a7b3b4f0bff0d5d445c20fbc9.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/mbns1g.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/mbns1g.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/kzj7tr.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/kzj7tr.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zpczcz.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zpczcz.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/e5e87r.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/e5e87r.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/sample/f0/eb/__akemi_homura_and_tomoe_mami_mahou_shoujo_madoka_magica_drawn_by_meso3__sample-f0eb7455aa9e9aee222779d2aa72a62b.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/sample/f0/eb/__akemi_homura_and_tomoe_mami_mahou_shoujo_madoka_magica_drawn_by_meso3__sample-f0eb7455aa9e9aee222779d2aa72a62b.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/miw8to.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/miw8to.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/d6219w.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/d6219w.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/co5uki.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/co5uki.png");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/original/ea/70/__kaname_madoka_and_ultimate_madoka_mahou_shoujo_madoka_magica_drawn_by_aubz__ea701582de6578220420d0ba028cc0c4.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/original/ea/70/__kaname_madoka_and_ultimate_madoka_mahou_shoujo_madoka_magica_drawn_by_aubz__ea701582de6578220420d0ba028cc0c4.jpg");
+}
+
+span:has(> .channel-emote[src="https://desu-usergeneratedcontent.xyz/trash/image/1555/72/1555724093693.jpg"]:hover)::after {
+  background-image: url("https://desu-usergeneratedcontent.xyz/trash/image/1555/72/1555724093693.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/vhq0ob.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/vhq0ob.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/qvpzfi.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/qvpzfi.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/ffaxey.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/ffaxey.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/57oqgo.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/57oqgo.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/4pctv6.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/4pctv6.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/k661w3.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/k661w3.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/amnwcz.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/amnwcz.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/2734o8.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/2734o8.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/8da9ke.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/8da9ke.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/1whod6.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/1whod6.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/e3lknq.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/e3lknq.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/2hpa18.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/2hpa18.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/hmhvhj.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/hmhvhj.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/90f5iq.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/90f5iq.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/npy9tx.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/npy9tx.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/0s9y3n.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/0s9y3n.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/omdcbp.PNG"]:hover)::after {
+  background-image: url("https://files.catbox.moe/omdcbp.PNG");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/lvt1xk.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/lvt1xk.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/sx1n1f.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/sx1n1f.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/76d7uk.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/76d7uk.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/gmrtan.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/gmrtan.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/y6w66v.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/y6w66v.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/wjtqo5.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/wjtqo5.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/a0ebd8.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/a0ebd8.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/205xr5.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/205xr5.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/x934m4.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/x934m4.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/91irpk.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/91irpk.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/8ohw1z.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/8ohw1z.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/bip7xr.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/bip7xr.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/osxulw.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/osxulw.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/jjcpht.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/jjcpht.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/nx6spk.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/nx6spk.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/9mqs05.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/9mqs05.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/yyh7a2.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/yyh7a2.jpg");
+}
+
+span:has(> .channel-emote[src="https://cdn.donmai.us/original/26/d4/__ryougi_shiki_kara_no_kyoukai_drawn_by_sen_astronomy__26d4a6222974ae7146670f618e787c8d.jpg"]:hover)::after {
+  background-image: url("https://cdn.donmai.us/original/26/d4/__ryougi_shiki_kara_no_kyoukai_drawn_by_sen_astronomy__26d4a6222974ae7146670f618e787c8d.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/jhh53z.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/jhh53z.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/sogs21.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/sogs21.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/3gwxdm.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/3gwxdm.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/nww2j1.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/nww2j1.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/xjmnlx.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/xjmnlx.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/knveno.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/knveno.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/aqxaj1.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/aqxaj1.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/meggks.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/meggks.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/1i9l51za.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/1i9l51za.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/spis69.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/spis69.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/0qldaolj.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/0qldaolj.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/0o1wxgbx.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/0o1wxgbx.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/lmp6db.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/lmp6db.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/iw4i8y2r.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/iw4i8y2r.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/dpa0pk8r.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/dpa0pk8r.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/9uqn4rak.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/9uqn4rak.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/wfw1e5hz.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/wfw1e5hz.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/nu3x8pjm.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/nu3x8pjm.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/rm246ed9.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/rm246ed9.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/jialf0zt.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/jialf0zt.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/1bjywbo7.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/1bjywbo7.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/waq5njvk.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/waq5njvk.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/3h2kbgpi.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/3h2kbgpi.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/ydj1un.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/ydj1un.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/6jsa6tn.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/6jsa6tn.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/12vxh14.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/12vxh14.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/xaqvx3m9.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/xaqvx3m9.png");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/2ge9bh.png"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/2ge9bh.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/01ylrzju.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/01ylrzju.jpg");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/ngu1rr.png"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/ngu1rr.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/0vklhu.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/0vklhu.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/x20bf789.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/x20bf789.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/koybmk.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/koybmk.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/aignap.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/aignap.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/o1u54yq.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/o1u54yq.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/m2f8f595.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/m2f8f595.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/99bfrw.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/99bfrw.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/r40yuc.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/r40yuc.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/livzlavr.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/livzlavr.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/5b3m3rd8.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/5b3m3rd8.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/vz29fw.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/vz29fw.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/kkuwpf.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/kkuwpf.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/kb0vo48.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/kb0vo48.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/ys8nyt3y.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/ys8nyt3y.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/jj2txb2y.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/jj2txb2y.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/v47zcgx5.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/v47zcgx5.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/y1oo08.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/y1oo08.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/pb7usov0.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/pb7usov0.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/tytkwk.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/tytkwk.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/jx4amq7s.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/jx4amq7s.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/zbfljov5.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/zbfljov5.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/te357urd.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/te357urd.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/fnn14b.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/fnn14b.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/w4obd2.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/w4obd2.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/39cjzoyi.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/39cjzoyi.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/oh4ubv.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/oh4ubv.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/jrkx88jb.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/jrkx88jb.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/5ts9kf.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/5ts9kf.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/4x93m38.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/4x93m38.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/5ceeop4.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/5ceeop4.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/cwjk3s5f.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/cwjk3s5f.jpg");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/g1vq4x.jpg"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/g1vq4x.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/iq7eqzxb.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/iq7eqzxb.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/68gj2vcb.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/68gj2vcb.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/f9488w5u.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/f9488w5u.jpg");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/m1m7ig.png"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/m1m7ig.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/9h0fiq.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/9h0fiq.jpg");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/nijblz.jpg"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/Hidamari%20Sketch/nijblz.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/wq1wtvt.jpg"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/wq1wtvt.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/f5lypi.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/f5lypi.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/da7cs4.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/da7cs4.png");
+}
+
+span:has(> .channel-emote[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6w1zozdcFD232mQict1vYMhpu0uWs_uA9Ew&amp;amp;amp;amp;s"]:hover)::after {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6w1zozdcFD232mQict1vYMhpu0uWs_uA9Ew&amp;amp;amp;amp;s");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zdqd0f.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zdqd0f.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/58gxq1.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/58gxq1.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/1de8jz.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/1de8jz.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/ltwrl9.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/ltwrl9.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/yucida.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/yucida.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/1jynij.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/1jynij.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/6mno77.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/6mno77.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/3cvd6i.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/3cvd6i.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/l24y8f.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/l24y8f.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/3cp2ac.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/3cp2ac.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/3b3p8q.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/3b3p8q.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/6od1za.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/6od1za.jpg");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/DG/4smwrg.jpg"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/DG/4smwrg.jpg");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/cwrqayxz.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/cwrqayxz.png");
+}
+
+span:has(> .channel-emote[src="https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/DG/q6q22m.jpg"]:hover)::after {
+  background-image: url("https://gitlab.com/widebeans/widebeans/-/raw/main/emotes/DG/q6q22m.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/bi2kqb.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/bi2kqb.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/pfiehi.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/pfiehi.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/xg4g0m.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/xg4g0m.jpg");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/5y125b.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/5y125b.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/tn516a.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/tn516a.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/a3c0uw.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/a3c0uw.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/iwztwl.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/iwztwl.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/pu1ey8.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/pu1ey8.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/nknd9i.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/nknd9i.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/wuel2d.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/wuel2d.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/da7cs4.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/da7cs4.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/dll3we.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/dll3we.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/5jhusqrv.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/5jhusqrv.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/pbyhuu06.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/pbyhuu06.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/kjpr8rny.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/kjpr8rny.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/7oa6p47n.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/7oa6p47n.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/jncjknf.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/jncjknf.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/wmm8dj4.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/wmm8dj4.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/tck94o6.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/tck94o6.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/1qs8pp.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/1qs8pp.png");
+}
+
+span:has(> .channel-emote[src="https://pomf2.lain.la/f/tytmjgor.png"]:hover)::after {
+  background-image: url("https://pomf2.lain.la/f/tytmjgor.png");
+}
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zh7rmt.png"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zh7rmt.png");
+}

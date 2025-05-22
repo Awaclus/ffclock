@@ -1,3 +1,5 @@
+# it's fine for it to complain about cname, the pipeline works anyway
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
