@@ -94,7 +94,7 @@ body {
 }
 
 #modflair {
-  display: none;
+  display: none !important;
 }
 
 b {
@@ -432,13 +432,8 @@ a:hover {
   transition: 0.2s;
 }
 
-a .qe_title {
-  color: #c8c8c8;
-}
-
-a .qe_title:hover {
+.qe_title {
   color: white;
-  text-decoration: underline;
 }
 
 .nick-hover {
