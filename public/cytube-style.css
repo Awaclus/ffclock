@@ -451,6 +451,11 @@ a:hover {
   margin-top: 2px;
   margin-right: 4px;
   margin-left: 4px;
+  background-color: #660000;
+}
+
+#chatheader .label:hover {
+  background-color: #2d0000;
 }
 
 .channel-emote {
