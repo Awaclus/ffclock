@@ -508,7 +508,7 @@ a:hover {
     display: none;
   }
 
-  .hovertraditional:hover {
+  .hovertraditional .channel-emote:hover {
      transition: 0.5s;
      object-fit: contain;
      transform: translateY(-70px) scale(2.75);
