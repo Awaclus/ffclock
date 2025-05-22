@@ -54,6 +54,24 @@ button:focus {
   scrollbar-width: thin;
 }
 
+a .qe_title {
+  color: #c8c8c8;
+}
+
+a .qe_title:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.queue_active {
+  background-image: linear-gradient(#620000b0, #62000089, #6200007d);
+}
+
+.queue_active.queue_temp {
+  background-color: #62000096;
+}
+
+
 
 body::before {
   content: "";
@@ -402,9 +420,6 @@ textarea.form-control {
   padding: 6px;
 }
 
-.queue_active {
-  background-image: linear-gradient(rgba(138, 145, 150, 0.7), rgba(138, 145, 150, 0.6), rgba(138, 145, 150, 0.5));
-}
 
 .container .credit {
   margin: 8px 0px 0px 0px;
