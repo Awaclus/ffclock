@@ -54,15 +54,6 @@ button:focus {
   scrollbar-width: thin;
 }
 
-a .qe_title {
-  color: #c8c8c8;
-}
-
-a .qe_title:hover {
-  color: white;
-  text-decoration: underline;
-}
-
 .queue_active {
   background-image: linear-gradient(#620000b0, #62000089, #6200007d);
 }
@@ -102,6 +93,9 @@ body {
   }
 }
 
+#modflair {
+  display: none;
+}
 
 b {
   font-weight: 800;
@@ -436,6 +430,15 @@ a:hover {
   color: rgb(170, 0, 0);
   text-decoration: none;
   transition: 0.2s;
+}
+
+a .qe_title {
+  color: #c8c8c8;
+}
+
+a .qe_title:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .nick-hover {
