@@ -518,6 +518,14 @@ a:hover {
 
 }
 
+span[data-nb] {
+  white-space: nowrap;
+}
+
+#glowies {
+  text-shadow: 0px 0px 3px red, 0px 0px 3px red;
+}
+
 [class^="chat-msg-Kyouko"] .username {
   text-shadow: 0px 0px 3px red, 0px 0px 3px red;
 }
