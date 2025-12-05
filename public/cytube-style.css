@@ -1376,3 +1376,7 @@ span:has(> .channel-emote[src="https://pomf2.lain.la/f/tytmjgor.png"]:hover)::af
 span:has(> .channel-emote[src="https://files.catbox.moe/zh7rmt.png"]:hover)::after {
   background-image: url("https://files.catbox.moe/zh7rmt.png");
 }
+
+span:has(> .channel-emote[src="https://files.catbox.moe/zrb3ap.jpg"]:hover)::after {
+  background-image: url("https://files.catbox.moe/zrb3ap.jpg");
+}
