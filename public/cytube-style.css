@@ -616,6 +616,15 @@ span[data-nb] {
   text-overflow: ellipsis;
 }
 
+summary a {
+  color: white;
+}
+
+summary a:hover {
+  color: #BBBBBB;
+  cursor: pointer;
+}
+
 
 span:has(> .channel-emote[src="https://files.catbox.moe/7aynue.jpg"]:hover)::after {
   background-image: url("https://files.catbox.moe/7aynue.jpg");
