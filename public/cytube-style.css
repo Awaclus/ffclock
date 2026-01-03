@@ -550,6 +550,10 @@ span[data-nb] {
   text-shadow: 0px 0px 3px darkgoldenrod, 0px 0px 3px darkgoldenrod;
 }
 
+.chat-msg-nks .username {
+  text-shadow: 0px 0px 3px #00D4F2, 0px 0px 3px #00D4F2;
+}
+
 [class^="chat-msg-mami"] .username {
   text-shadow: 0px 0px 3px darkgoldenrod, 0px 0px 3px darkgoldenrod;
 }
