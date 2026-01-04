@@ -7,7 +7,7 @@ const Clock = () => {
   const pt2 = new Date("2026-01-10T21:37:04.000Z");
   const pt3 = new Date("2026-01-11T00:42:22.000Z");
   const end = new Date("2026-01-11T03:03:06.000Z");
-  const next = new Date("2027-01-10T18:55:00.000Z");
+  const next = new Date("2027-01-09T18:55:00.000Z");
 
 
   useEffect(() => {
