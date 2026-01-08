@@ -1385,3 +1385,11 @@ span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/zh7rmt.png"]:ho
 span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/zrb3ap.jpg"]:hover)::after {
   background-image: url("https://files.awaclus.eu/ffemotes/zrb3ap.jpg");
 }
+
+span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/1766745723785.png"]:hover)::after {
+  background-image: url("https://files.awaclus.eu/ffemotes/1766745723785.png");
+}
+
+span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/1767491140740.png"]:hover)::after {
+  background-image: url("https://files.awaclus.eu/ffemotes/1767491140740.png");
+}
