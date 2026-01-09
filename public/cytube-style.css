@@ -574,6 +574,14 @@ span[data-nb] {
   text-shadow: 0px 0px 3px darkorchid, 0px 0px 3px darkorchid;
 }
 
+[class^="chat-msg-nagisa"] .username {
+  text-shadow: 0px 0px 3px #faf8ff, 0px 0px 3px #faf8ff;
+}
+
+[class^="chat-msg-Nagisa"] .username {
+  text-shadow: 0px 0px 3px #faf8ff, 0px 0px 3px #faf8ff;
+}
+
 .chat-msg-Awaclus .username {
   text-shadow: 0px 0px 3px red, 0px 0px 3px red;
   color: white;
