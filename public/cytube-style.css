@@ -1411,3 +1411,15 @@ span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/1766745723785.p
 span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/1767491140740.png"]:hover)::after {
   background-image: url("https://files.awaclus.eu/ffemotes/1767491140740.png");
 }
+
+span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/7ugonj9z.png"]:hover)::after {
+  background-image: url("https://files.awaclus.eu/ffemotes/7ugonj9z.png");
+}
+
+span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/d57n3e.png"]:hover)::after {
+  background-image: url("https://files.awaclus.eu/ffemotes/d57n3e.png");
+} 
+
+span:has(> .channel-emote[src="https://files.awaclus.eu/ffemotes/mk16ychb.png"]:hover)::after {
+  background-image: url("https://files.awaclus.eu/ffemotes/mk16ychb.png");
+}
