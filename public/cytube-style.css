@@ -559,7 +559,7 @@ span[data-nb] {
 }
 
 .chat-msg-nks .username {
-  text-shadow: 0px 0px 3px #00D4F2, 0px 0px 3px #00D4F2;
+  text-shadow: 0px 0px 3px #7FFF00 , 0px 0px 3px #7FFF00 ;
 }
 
 [class^="chat-msg-mami"] .username {
