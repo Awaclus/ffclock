@@ -58,6 +58,7 @@ const Clock = () => {
 
       <p>Note: This is based on a pre-calculated estimate, not on the actual stream. It should be accurate to within a few seconds if everything goes according to keikaku, but it might not be exact to the second and it could be off by way more if shit hits the fan. </p>
       <p>Also it is based on your own system's clock so you should synchronize your system time if you want it to be as accurate as possible.</p>
+      <p>The schedule might be postponed by two hours if Kaiten isn't available by the time I'm encoding the stream.</p>
     </div>
   );
 
