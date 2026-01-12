@@ -7,7 +7,7 @@ const Clock = () => {
   const pt2 = new Date("2026-01-10T21:37:04.000Z");
   const pt3 = new Date("2026-01-11T00:42:22.000Z");
   const end = new Date("2026-01-11T03:03:06.000Z");
-  const next = new Date("2027-01-09T18:55:00.000Z");
+  const next = new Date("2027-01-09T16:55:00.000Z");
 
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const Clock = () => {
         end < time && next > time && <div>
             <h3>See you next year in:</h3>
             <p className='clock'>{msToTime(next-time, true)}</p>
-            <p>(and don't forget Kara no Kyoukai!)</p>
+            <p>(and don't forget Kara no Kyoukai on Feb 28 and Mar 7, 19:00 UTC!)</p>
         </div>
       }
 

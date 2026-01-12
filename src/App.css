@@ -25,12 +25,12 @@
   color: white;
   font-size: 2.8rem;
   font-family: hummingbird;
-  filter: drop-shadow(0px 0px 7px red) drop-shadow(0px 0px 17px red);
+  filter: drop-shadow(0px 0px 7px deepskyblue) drop-shadow(0px 0px 17px deepskyblue);
 }
 
 .fflogo {
   max-width: 200px;
-  filter: drop-shadow(0px 0px 7px red) drop-shadow(0px 0px 17px red);
+  filter: drop-shadow(0px 0px 7px deepskyblue) drop-shadow(0px 0px 17px deepskyblue);
   transition: 1.5s;
 }
 .fflogo:hover {
