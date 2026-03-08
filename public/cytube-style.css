@@ -11,11 +11,11 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scrollbar-color: #660000 rgba(0, 0, 0, 0.5);
+  scrollbar-color: #004466 rgba(0, 0, 0, 0.5);
 }
 
 input {
-  accent-color: red;
+  accent-color: deepskyblue ;
 }
 
 a:focus,
@@ -34,19 +34,19 @@ button:focus {
 }
 
 .nav .open>a:focus {
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(0, 191, 255, 0.4);
 }
 
 .nav>li>a:hover {
-  background-color: rgb(55, 0, 0);
+  background-color: rgb(0, 0, 55);
 }
 
 ::-moz-selection {
-  background: #770000;
+  background: #000077;
 }
 
 ::selection {
-  background: #770000;
+  background: #000077;
 }
 
 #userlist,
@@ -55,11 +55,11 @@ button:focus {
 }
 
 .queue_active {
-  background-image: linear-gradient(#620000b0, #62000089, #6200007d);
+  background-image: linear-gradient(#000062b0, #00006289, #0000627d);
 }
 
 .queue_active.queue_temp {
-  background-color: #62000096;
+  background-color: #00006296;
 }
 
 
@@ -71,7 +71,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://files.awaclus.eu/ffemotes/knk_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://ffclock.awaclus.eu/assets/sayakabg-UX_gJZOR.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,7 +110,7 @@ b {
 h3,
 h4 {
   font-family: 'hummingbird', Verdana, sans-serif;
-  text-shadow: 0px 0px 6px red, 0px 0px 10px red;
+  text-shadow: 0px 0px 6px deepskyblue, 0px 0px 10px deepskyblue;
   color: white;
 }
 
@@ -133,15 +133,15 @@ h4 {
 }
 
 .btn-primary {
-  background-image: linear-gradient(rgba(225, 0, 0, 0.9), rgba(255, 0, 0, 0.8) 40%, rgba(190, 0, 0, 0.8));
+  background-image: linear-gradient(rgba(0, 160, 225, 0.9), rgba(0, 191, 255, 0.8) 40%, rgba(0, 150, 190, 0.8));
 }
 
 .btn-primary:hover {
-  background-image: linear-gradient(rgba(160, 0, 0, 0.9), rgba(160, 0, 0, 0.8) 40%, rgba(130, 0, 0, 0.8));
+  background-image: linear-gradient(rgba(0, 120, 160, 0.9), rgba(0, 120, 160, 0.8) 40%, rgba(0, 90, 130, 0.8));
 }
 
 .nav-tabs .active a {
-  background-color: rgba(255, 0, 0, 0.4) !important;
+  background-color: rgba(0, 191, 255, 0.4) !important;
 }
 
 .text-muted a[href="/funding"]::after {
@@ -226,12 +226,12 @@ h4 {
 
 #togglemotd .glyphicon-plus {
   font-size: 11pt;
-  color: rgb(255, 0, 0);
+  color: deepskyblue;
 }
 
 #togglemotd .glyphicon-plus:hover {
   font-size: 11pt;
-  color: rgb(255, 0, 0);
+  color: deepskyblue;
 }
 
 
@@ -245,13 +245,13 @@ h4 {
 }
 
 .navbar-inverse {
-  background-image: linear-gradient(rgba(200, 0, 0, 0.9), rgba(200, 0, 0, 0.7), rgba(200, 0, 0, 0.6)) !important;
+  background-image: linear-gradient(rgba(0, 160, 200, 0.9), rgba(0, 160, 200, 0.7), rgba(0, 160, 200, 0.6)) !important;
   background-color: unset;
   height: 50px;
 }
 
 .dropdown-menu li a {
-  background-image: linear-gradient(rgba(200, 0, 0, 0.9), rgba(200, 0, 0, 0.7), rgba(200, 0, 0, 0.6)) !important;
+  background-image: linear-gradient(rgba(0, 160, 200, 0.9), rgba(0, 160, 200, 0.7), rgba(0, 160, 200, 0.6)) !important;
 }
 
 li .divider {
@@ -261,7 +261,7 @@ li .divider {
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:focus,
 .navbar-inverse .navbar-nav>.open>a:hover {
-  background-color: rgba(128, 0, 0, 0.5) !important;
+  background-color: rgba(0, 90, 128, 0.5) !important;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus {
@@ -280,7 +280,7 @@ li .divider {
 .dropdown-menu {
   padding: 2px;
   border-radius: 5px;
-  background-color: rgb(64, 0, 0);
+  background-color: rgb(0, 50, 64);
   left: -2px;
   top: 48px;
 
@@ -422,12 +422,12 @@ textarea.form-control {
 }
 
 a {
-  color: rgb(235, 0, 0);
+  color: rgb(0, 160, 235);
   transition: 0.4s;
 }
 
 a:hover {
-  color: rgb(170, 0, 0);
+  color: rgb(0, 135, 170);
   text-decoration: none;
   transition: 0.2s;
 }
@@ -438,7 +438,7 @@ a:hover {
 }
 
 .nick-hover {
-  background-color: rgba(255, 0, 0, 0.02) !important;
+  background-color: rgba(0, 191, 255, 0.02) !important;
   color: white;
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.1);
 }
@@ -451,11 +451,11 @@ a:hover {
   margin-top: 2px;
   margin-right: 4px;
   margin-left: 4px;
-  background-color: #660000;
+  background-color: #004466;
 }
 
 #chatheader .label:hover {
-  background-color: #2d0000;
+  background-color: #00202d;
 }
 
 #usercount {
@@ -523,7 +523,7 @@ span[data-nb] {
 }
 
 #glowies {
-  text-shadow: 0px 0px 3px red, 0px 0px 3px red;
+  text-shadow: 0px 0px 3px deepskyblue, 0px 0px 3px deepskyblue;
 }
 
 [class^="chat-msg-Kyouko"] .username {
